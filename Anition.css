@@ -1,0 +1,253 @@
+*{
+    /* background-color: azure; */
+    margin: 0;
+    padding: 0;
+    background: rgb(195, 215, 215);
+}
+
+#star{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+
+
+#stra1{
+  font-size: 50px;
+  padding-bottom: 200px;
+  padding-right: 50px;
+  color: rgb(255, 242, 0);
+  animation: star-move 5s infinite;
+  
+}
+
+#stra2{
+  font-size: 100px;
+    color: aqua;
+    padding: 50px;
+    animation: star-move1 5s infinite;
+}
+
+#stra3{
+  font-size: 80px;
+  color: rgb(255, 0, 225);
+  padding-bottom: 100px;
+  padding-right: 50px;
+  animation: star-move 5s infinite;
+}
+
+#stra4{
+  font-size: 150px;
+  color: rgb(38, 255, 0);
+  padding-bottom: 300px;
+  padding-left: 50px;
+  animation: star-move1 5s infinite;
+}
+
+#cloud{
+  font-size: 200px;
+  color: aquamarine;
+ 
+}
+
+section{
+   
+    height: 100vh;
+    
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box-model{
+  height: 200px;
+  width: 300px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  display: flex;
+   justify-content: space-between;
+  /* align-items: end; */ 
+  
+}
+
+#box3{
+  border-right: 5px solid rgb(255, 0, 0);
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 10px;
+}
+
+#box4{
+  margin-top: 2%;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(226, 183, 25);
+  animation: road-move 2s infinite alternate;
+}
+
+.box-model div{
+  margin-top: 180px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(226, 43, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: 2s; */
+  animation: rotation_wheel 2s infinite linear;
+}
+
+/* .weel:hover{
+   transform: rotate(360deg); 
+
+  background-color: blue;
+
+} */
+
+#line1{
+  background-color: aliceblue;
+  width: 50px;
+  height: 2px;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  rotate: 90deg;
+}
+
+#line2{
+  background-color: aliceblue;
+  width: 50px;
+  height: 2px;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  rotate: 180deg;
+  position: absolute;
+}
+
+#line3{
+  background-color: aliceblue;
+  width: 50px;
+  height: 2px;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  rotate: 270deg;
+  position: absolute;
+}
+
+#line4{
+  background-color: aliceblue;
+  width: 50px;
+  height: 2px;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  rotate: 360deg;
+  position: absolute;
+}
+
+#join{
+  background-color: black;
+  width: 20px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+#gate1{
+  height: 80px;
+  width: 50px;
+  background-color: rgb(255, 106, 0);
+  position: absolute;
+
+}
+
+#gate2{
+  height: 80px;
+  width: 50px;
+  background-color: rgb(255, 106, 0);
+  position: absolute;
+  margin-right: 40%;
+
+}
+
+
+#gate3{
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 106, 0);
+  margin-left: 40%;
+  position: absolute;
+  border-radius: 5px;
+
+}
+
+
+@keyframes rotation_wheel {
+  from {
+    transform: rotate(0deg);
+   
+  }
+  to {
+    transform: rotate(360deg);
+   
+  }
+  
+}
+
+
+
+@keyframes road-move {
+  from {
+    transform: translateX(0);
+    background-color: rgb(226, 43, 43); /* Replace with your initial color */
+  }
+  to {
+    transform: translateX(100px); /* Adjust the value as needed */
+    background-color: rgb(42, 165, 138); /* Replace with the color you want to change to */
+  }
+}
+
+
+@keyframes star-move {
+  0% {
+    font-size: 50px;
+    color: rgb(0, 255, 255);
+  }
+   50% {
+    font-size: 75px;
+    color: darkblue;
+  }
+
+  75%{
+     font-size: 80px;
+     color: rgb(255, 0, 0);
+  }
+}
+
+
+
+@keyframes star-move1 {
+  0% {
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+  }
+   50% {
+    font-size: 60px;
+    color: rgb(0, 139, 39);
+  }
+
+  75%{
+     font-size: 20px;
+     color: rgb(150, 133, 208);
+  }
+}
